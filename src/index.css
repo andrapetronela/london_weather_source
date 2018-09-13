@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(to right, #757abf 0%,#8583be 60%,#eab0d1 100%);
+	font-family: 'Fira Sans';
+	font-weight: 200;
+}
+.App-title {
+	text-align: center;
+	margin: 4rem 0 3rem;
+	font-size: 3rem;
+	color: rgba(255, 255, 255, .5);
+	font-family: "Special Elite";
+}
+.umbrella {
+	color: #560027;
+}
+.day {
+	background-color: transparent;
+	width: max-content;
+	padding: 3rem 5rem;
+	margin: 1rem;
+	box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+	transition: all .3s ease;
+	backface-visibility: hidden;
+	cursor: pointer;
+	line-height: 1.8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+	.day {
+		padding: 2rem;
+	}
+}
+.day h3:after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 100%;
+	background-color: #999;
+	margin: .5rem 0;
+}
+.day:hover {
+	transform: scale(1.1);
+}
+.day-wrapper {
+	width: 80vw;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+h1, h3 {
+	font-weight: 300;
+}
+.day h3 {
+	color: #444;
+}
+.date {
+	font-weight: 400;
+}
+.calendar {
+	display: inline-block;
+	margin-right: 1rem;
+	color: rgba(185, 246, 202, 0.51);
+}
+.day .state {
+	color: #ffcc80;
+	padding: 1rem 0 2rem;
+}
+.day .state:after,
+.day .date:after {
+	display: none;
+}
+.cloud {
+	color: rgba(255, 255, 255, .2);
+	display: inline-block;
+	margin-right: 1rem;
+}
+.day .max {
+	color: rgba(167, 72, 72, 0.99);
+}
+.day .min {
+	color: rgba(144, 202, 249, 0.81);
+}
+
+
+
+
+
+
